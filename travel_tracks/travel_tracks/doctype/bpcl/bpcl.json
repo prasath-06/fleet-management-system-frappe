@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "field:company_name",
+ "creation": "2025-07-30 17:22:19.927551",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_orlq",
+  "amended_from",
+  "company_id",
+  "company_name",
+  "email",
+  "phone",
+  "wallet_id",
+  "password",
+  "vehicle"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_orlq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BPCL",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Table",
+   "label": "vehicle",
+   "options": "Vehicle Details"
+  },
+  {
+   "fieldname": "wallet_id",
+   "fieldtype": "Data",
+   "label": "wallet id"
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "company id",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "password"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "company name",
+   "unique": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-22 15:43:36.321457",
+ "modified_by": "Administrator",
+ "module": "Travel Tracks",
+ "name": "BPCL",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

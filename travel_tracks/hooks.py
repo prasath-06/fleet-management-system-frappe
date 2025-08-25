@@ -24,6 +24,15 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+app_include_js = [
+    "https://unpkg.com/leaflet@1.9.3/dist/leaflet.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js",
+]
+
+app_include_css = [
+    "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"
+]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/travel_tracks/css/travel_tracks.css"
 # app_include_js = "/assets/travel_tracks/js/travel_tracks.js"
@@ -241,4 +250,8 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+doctype_list_js = {
+    "bpcl": "travel_tracks/travel_tracks/travel_tracks/doctype/bpcl/bpcl_list.js"
+}
 
